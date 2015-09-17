@@ -1,0 +1,9 @@
+C:\Users\Mark\Source\Repos\Windows-Universal-Recipe-App\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.config
+C:\Users\Mark\Source\Repos\Windows-Universal-Recipe-App\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\obj\Debug\Lab1-AbstractClasses-Properties.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.config
+C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe
+C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.pdb
+C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\obj\Debug\Lab1-AbstractClasses-Properties.exe
+C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\obj\Debug\Lab1-AbstractClasses-Properties.pdb
+C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.CodeAnalysisLog.xml
+C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.lastcodeanalysissucceeded
