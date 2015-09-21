@@ -19,8 +19,8 @@ namespace Lab1AbstractClassesProperties
     }
     public abstract class ThreeDShape
     {
-        public readonly string shapeType;                       //readonly type, can only be set in constructor or initializer
-        public string GetShape                                  //public getter for shapeType
+        private readonly string shapeType;                       //readonly type, can only be set in constructor or initializer
+        public string ShapeType                                  //public getter for shapeType
         {
             get
             {
@@ -28,13 +28,7 @@ namespace Lab1AbstractClassesProperties
             }
         }
         private const double pi = 3.14159;                      //PI should not be altered from the set value during execution
-        public double GetPi                                     //public getter for PI
-        {
-            get
-            {
-                return pi;
-            }
-        }
+        public double Pi { get;}
         protected ThreeDShape(string shapeType)                 //protected constructor for abstract class as public access is not required
         {
             this.shapeType = shapeType;
@@ -47,14 +41,14 @@ namespace Lab1AbstractClassesProperties
 
         public override string ToString()
         {
-            return "Shape type: " + GetShape;
+            return "Shape type: " + ShapeType;
         }
     }
 
     class Sphere : ThreeDShape
     {
-        public readonly double radius;
-        public double getRadius
+        private readonly double radius;
+        public double Radius
         {
             get
             {
@@ -68,11 +62,11 @@ namespace Lab1AbstractClassesProperties
 
         public override double CalculateVolume()
         {
-            return GetPi * (radius * radius * radius);
+            return Pi * (radius * radius * radius);
         }
         public override string ToString()
         {
-            return base.ToString() + "\nRadius: " + getRadius + "\nVolume: " + CalculateVolume() ;  //appends extra shape information to base.ToString() from ThreeDShape
+            return base.ToString() + "\nRadius: " + Radius + "\nVolume: " + CalculateVolume() ;  //appends extra shape information to base.ToString() from ThreeDShape
         }
     }
 }
