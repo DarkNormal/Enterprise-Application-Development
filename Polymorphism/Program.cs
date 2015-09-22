@@ -14,13 +14,22 @@ namespace Polymorphism
         */
         static void Main()
         {
-            Vertex v = new Vertex(1, 1);
+            Vertex v = new Vertex(1, 5);
             Console.WriteLine("X,Y Coordinates of first vertex: {0},{1}", v.XCoord, v.YCoord);
             Line l = new Line(10,2,2,4,"red");
             Console.WriteLine(l.ToString());
             l.Translate(v);                     //translate the line by the amount in vertex v
                                                 //in this case, move all points by 1 x and 1 y
             Console.WriteLine(l.ToString());
+            Shape[] shapeCollection = { new Line(14, 1, -2, 1, "magenta"),
+                                        new Circle(4,5, 10, "blue")
+            };
+            foreach(Shape s in shapeCollection)
+            {
+                Console.WriteLine(s.ToString());
+                s.Translate(new Vertex(4, 1));
+                Console.WriteLine(s.ToString());    //after translate on shape
+            }
             Console.ReadLine();
         }
     }
@@ -93,6 +102,43 @@ namespace Polymorphism
         {
             return "Shape type: Line\n" + base.ToString() + "\nPoint 1: " + Point1.XCoord
                 + "," + Point1.YCoord + "\nPoint 2: " + Point2.XCoord + "," + Point2.YCoord;
+        }
+    }
+    class Circle : Shape
+    {
+        private const double pi = 3.14159;
+        public double Pi { get; }
+        Vertex center;
+        public int Radius{get;set;}
+        public Vertex Center {
+            get
+            {
+                return center;
+            }
+            set
+            {
+                center.XCoord = center.XCoord + value.XCoord;
+                center.YCoord = center.YCoord + value.YCoord;
+            }
+            }
+        public override void Translate(Vertex toTranslate)
+        {
+            Center = toTranslate;
+        }
+        public Circle(int centerX, int centerY, int radius, string color) : base(color)
+        {
+            center = new Vertex(centerX, centerY);
+            Radius = radius;
+
+        }
+        public override string ToString()
+        {
+            return "Shape type: Circle\n" + base.ToString() + "\nCenter: " + Center.XCoord + ", " + Center.YCoord
+                + "\nRadius: " + Radius + "\nArea: " + Area();
+        }
+        public double Area()
+        {
+            return pi * (Radius * Radius);
         }
     }
 }

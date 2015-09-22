@@ -13,6 +13,13 @@ namespace Lab1AbstractClassesProperties
             //ThreeDShape shape = new ThreeDShape();            //results in build error when trying to instantiate abstract class
             Sphere sphereShape = new Sphere("Sphere", 12.34);
             Console.WriteLine(sphereShape.ToString());
+            
+            ThreeDShape[] shapeCollection = { new Sphere("Red Sphere", 10),
+                                              new Sphere("Purple Sphere", 5.6)};
+            foreach (ThreeDShape shape in shapeCollection)
+            {
+                Console.WriteLine(shape.ToString());
+            }
             Console.ReadLine();
 
         }
@@ -28,7 +35,12 @@ namespace Lab1AbstractClassesProperties
             }
         }
         private const double pi = 3.14159;                      //PI should not be altered from the set value during execution
-        public double Pi { get;}
+        public double Pi { get
+            {
+                return pi;
+            }
+
+        }
         protected ThreeDShape(string shapeType)                 //protected constructor for abstract class as public access is not required
         {
             this.shapeType = shapeType;
@@ -62,7 +74,7 @@ namespace Lab1AbstractClassesProperties
 
         public override double CalculateVolume()
         {
-            return Pi * (radius * radius * radius);
+            return Pi * (Radius * Radius * Radius);
         }
         public override string ToString()
         {
