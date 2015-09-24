@@ -35,7 +35,7 @@ namespace Lab1AbstractClassesProperties
             }
         }
         private const double pi = 3.14159;                      //PI should not be altered from the set value during execution
-        public double Pi { get
+        public static double Pi { get
             {
                 return pi;
             }
@@ -57,7 +57,7 @@ namespace Lab1AbstractClassesProperties
         }
     }
 
-    class Sphere : ThreeDShape
+    public class Sphere : ThreeDShape
     {
         private readonly double radius;
         public double Radius
