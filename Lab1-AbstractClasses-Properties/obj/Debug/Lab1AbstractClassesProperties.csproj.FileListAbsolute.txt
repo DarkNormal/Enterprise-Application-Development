@@ -10,3 +10,5 @@ C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\
 C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.pdb
 C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.CodeAnalysisLog.xml
 C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.lastcodeanalysissucceeded
+C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.CodeAnalysisLog.xml
+C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.lastcodeanalysissucceeded
