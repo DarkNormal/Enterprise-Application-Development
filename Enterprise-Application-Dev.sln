@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsAndIndexers", "Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumsAndStructs", "EnumsAndStructs\EnumsAndStructs.csproj", "{AA03C3BF-5852-48AB-BA7B-474B8AB8562E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{C3050B7D-67DA-422F-AFB8-4F06B6CF3C8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AA03C3BF-5852-48AB-BA7B-474B8AB8562E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA03C3BF-5852-48AB-BA7B-474B8AB8562E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA03C3BF-5852-48AB-BA7B-474B8AB8562E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3050B7D-67DA-422F-AFB8-4F06B6CF3C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3050B7D-67DA-422F-AFB8-4F06B6CF3C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3050B7D-67DA-422F-AFB8-4F06B6CF3C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3050B7D-67DA-422F-AFB8-4F06B6CF3C8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
