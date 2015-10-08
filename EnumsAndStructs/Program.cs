@@ -18,6 +18,9 @@ namespace EnumsAndStructs
                 mon.Conversion(mon.MoneyAmount, "Euro", "Yen");
                 Console.WriteLine(mon.MoneyAmount + " " + mon.CurrencyUnit);
 
+                Money addedMoney = mon + monTwo;
+                Console.WriteLine("Operator overloading result: " + addedMoney.MoneyAmount + " " + addedMoney.CurrencyUnit);
+
                 Money added = mon.CurrencyAddition(mon, monTwo);
                 Console.WriteLine(added.MoneyAmount + " " + added.CurrencyUnit);
             }
@@ -39,10 +42,10 @@ namespace EnumsAndStructs
         static double YenToEuro { get { return 0.007401; } }
         static double YenToDollar { get { return 0.008288; } }
 
-        public Money(double money, string unit) :this()
+        public Money(double money, string unit) : this()
         {
             MoneyAmount = money;
-            if(unit.ToLower(CultureInfo.CurrentCulture).Equals("euro") || unit.ToLower(CultureInfo.CurrentCulture).Equals("dollars") ||
+            if (unit.ToLower(CultureInfo.CurrentCulture).Equals("euro") || unit.ToLower(CultureInfo.CurrentCulture).Equals("dollars") ||
                 unit.ToLower(CultureInfo.CurrentCulture).Equals("yen"))
             {
                 CurrencyUnit = unit;
@@ -51,7 +54,7 @@ namespace EnumsAndStructs
             {
                 throw new ArgumentException("Invalid currency type entered. Enter Euro, Dollars or Yen");
             }
-            
+
         }
         public double Conversion(double money, string currentUnit, string conversionUnit)
         {
@@ -133,6 +136,14 @@ namespace EnumsAndStructs
             double total = converted.Conversion(toAdd.MoneyAmount, toAdd.CurrencyUnit, baseMoney.CurrencyUnit) + baseMoney.MoneyAmount;
             converted.MoneyAmount = total;
             return converted;
+        }
+
+        static public Money operator +(Money money1, Money money2)
+        {
+            Money addedMoney = new Money(0, money1.CurrencyUnit);
+            double total = addedMoney.Conversion(money2.MoneyAmount, money2.CurrencyUnit, money1.CurrencyUnit) + money1.MoneyAmount;
+            addedMoney.MoneyAmount = total;
+            return addedMoney;
         }
     }
 }
