@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A86F1828-EEA1-4BDB-A471-1B7B5E69FF44}</ProjectGuid>
+    <ProjectGuid>{8C014A66-5C92-4C6B-9328-D182839BDC2D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BankUnitTest</RootNamespace>
-    <AssemblyName>BankUnitTest</AssemblyName>
+    <RootNamespace>CSharpSampleExam1UnitTest</RootNamespace>
+    <AssemblyName>CSharpSampleExam1UnitTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,13 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BankUnitTest.cs" />
+    <Compile Include="SampleExam1UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BankUnitTesting\BankUnitTesting.csproj">
-      <Project>{18ff511c-593c-42fc-8981-df082e6bc2b8}</Project>
-      <Name>BankUnitTesting</Name>
+    <ProjectReference Include="..\CSharpSampleExam1\CSharpSampleExam1.csproj">
+      <Project>{93d3b33a-aff1-443b-a971-fb292795a443}</Project>
+      <Name>CSharpSampleExam1</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
