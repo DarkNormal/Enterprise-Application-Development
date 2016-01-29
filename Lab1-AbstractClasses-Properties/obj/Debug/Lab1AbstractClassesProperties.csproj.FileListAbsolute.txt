@@ -8,8 +8,7 @@ C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\obj\Debug\
 C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\obj\Debug\Lab1-AbstractClasses-Properties.pdb
 C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe
 C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.pdb
-C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.CodeAnalysisLog.xml
-C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.lastcodeanalysissucceeded
 C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.CodeAnalysisLog.xml
 C:\Users\Mark\Source\Repos\Enterprise-Application-Dev\Lab1-AbstractClasses-Properties\bin\Debug\Lab1-AbstractClasses-Properties.exe.lastcodeanalysissucceeded
-C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\obj\Debug\Lab1AbstractClassesProperties.csprojResolveAssemblyReference.cache
+C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Enterprise-Application-Development\Lab1-AbstractClasses-Properties\bin\Debug\WebActivator.dll
